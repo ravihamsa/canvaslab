@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Lab</title>
+    <style type="text/css">
+        .container {
+            height: 100%;
+            padding: 20px;
+            margin: 20px;
+            border:1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <canvas id="mycanvas" width="1000" height="1000"></canvas>
+</div>
+
+<script type="text/javascript">
+    var canvas = document.getElementById('mycanvas');
+    var context = canvas.getContext('2d');
+
+
+    context.fillStyle = "#ffff00";
+    context.font="38pt Times";
+    context.strokeStyle = "blue";
+    context.shadowColor = '#ccccff';
+    context.shadowOffsetX = 4;
+    context.shadowOffsetY = 4;
+    context.fillText('Ravi Kumar Hamsa', 100, 100);
+    context.strokeText('Ravi Kumar Hamsa', 100, 100);
+
+
+</script>
+
+</body>
+</html>
